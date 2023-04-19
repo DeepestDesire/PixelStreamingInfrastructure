@@ -7,6 +7,7 @@ import {
     PixelStreaming
 } from '@epicgames-ps/lib-pixelstreamingfrontend-ue5.2';
 
+import { InteractiveManager } from '../streamManager/InteractiveManager'
 export interface PixelStreamingWrapperProps {
     initialSettings?: Partial<AllSettings>;
 }
@@ -32,6 +33,8 @@ export const PixelStreamingWrapper = ({
                 videoElementParent: videoParent.current
             });
             
+            InteractiveManager.currentStream = streaming
+
             // register a playStreamRejected handler to show Click to play overlay if needed:
             streaming.addEventListener('playStreamRejected', () => {
                 setClickToPlayVisible(true);
