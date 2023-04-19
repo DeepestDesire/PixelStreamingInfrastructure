@@ -21,4 +21,13 @@ document.body.onload = function() {
 	});
 	// document.getElementById("centrebox").appendChild(application.rootElement);
 	document.body.appendChild(application.rootElement);
+	setInterval(() => {
+		stream.emitUIInteraction("Hello World!")
+	}, 4000);
+
+	stream.addResponseEventListener("handle_responses", handleResponsesFromEngine)
+}
+
+function handleResponsesFromEngine(data: string) {
+	console.log('break', data)
 }

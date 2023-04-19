@@ -97,8 +97,8 @@ export class AggregatedStats {
                     this.handleStream(stat);
                     break;
                 default:
-                    Logger.Error(Logger.GetStackTrace(), 'unhandled Stat Type');
-                    Logger.Log(Logger.GetStackTrace(), stat);
+                    // Logger.Error(Logger.GetStackTrace(), 'unhandled Stat Type');
+                    // Logger.Log(Logger.GetStackTrace(), stat);
                     break;
             }
         });
