@@ -1,0 +1,17 @@
+.George {
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    background-color: brown;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    
+}
+
+#streamingVideo {
+
+    height: 100px;
+    width: 100px;
+}
