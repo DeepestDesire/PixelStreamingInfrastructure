@@ -37,7 +37,6 @@ export class VideoPlayer {
         this.videoElement.playsInline = true;
         this.videoElement.style.width = '100%';
         this.videoElement.style.height = '100%';
-        this.videoElement.style.position = 'absolute';
         this.videoElement.style.pointerEvents = 'all';
         videoElementParent.appendChild(this.videoElement);
 
